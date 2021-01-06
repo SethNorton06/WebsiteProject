@@ -1,0 +1,66 @@
+/*
+    Author:     Seth Norton
+    Date:       2 November 2020
+    Assignment: Project
+    Purpose:    CSS for our home page
+*/
+body 
+{
+	font-family: 'Raleway', sans-serif;    /*changes the font to raleway and then defaults to sans-serif*/
+    margin: auto;                             /*eliminates the browser's default margin*/
+    max-width: 1000px;	                       /*100% spans the display width*/
+    box-shadow: 5px 10px #888888;
+}
+
+header, nav, footer
+{
+	background-color: rgba(75,104,139,1);   /*The background will be a dark gray and partially transparent*/
+    color: rgba(255,255,255,1);
+    margin: 0;                              /*Sets the margin to 0*/
+    padding: 10px 0px;                      /*Sets the top padding to 10px and the right and left padding to 0px*/
+}
+
+header 
+{
+    height: 95px;                          /*Sets the height of the header to 95px*/
+    text-align: center;                    /*Center aligns the text in the header*/
+}
+
+nav 
+{
+    padding-bottom: 50px;                  /*Sets the bottom padding to 15px*/
+}
+
+nav a 
+{
+	float: left;                            /*floats the nav elements to the left part of the screen*/
+    display: block;                         /*makes the nav elements display as block-level elements*/
+    width: 110px;                           /*sets the nav elements to 75px*/
+    color: #FFF;                            /*sets the color of the elements to white*/
+    padding: 15px 0;                        /*sets top padding to 5px and default otherwise*/
+}
+
+nav a:link, nav a:visited 
+{
+	margin-right: 5px;                     /*sets the right margin to 5px*/
+    border-radius: 5px;                    /*adds a rounded cornder*/
+    text-align: center;                    /*center aligns the elements*/
+    text-decoration: none;                 /*does not add any text decoration*/
+    position: relative;                    /*sets the position of the elements as relative*/
+    left: 50px;                            /*sets the left edge 50px from the left edge*/
+    top: -25px;                            /*sets the element 25 px below the top of the element*/
+}
+
+article 
+{
+	box-sizing: border-box;
+	border: 1px solid rgba(85,62,0,1);
+	color: rgba(0,0,0,1);
+	padding: 15px;
+}
+
+nav a:hover, nav a:active, .current 
+{
+	color: #FFDCAD;                        /*sets the hex color to Navajo White*/
+    border-bottom: 4px solid #333;         /*adds a border on the bottom of the element that is a 4px solid border that is the color night rider*/
+}
